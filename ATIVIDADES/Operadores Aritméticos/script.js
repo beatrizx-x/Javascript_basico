@@ -48,3 +48,30 @@ console.log(`O valor do troco é: ${valorPago - valorProduto}`);
 
 
 //Operadores de Comparação
+
+let x = 20;
+let y = "20";
+console.log(x == y); // o == compara apenas o valor, sem se importar com o tipo
+console.log(typeof y); // o typeof mostra o tipo da variável, e o y é do tipo string
+console.log(x === y); // o === compara o valor e o tipo, e o y esta como string, entao o resultado é false.
+
+//Maior ou menor?
+let a = 5;
+let b = 15;
+console.log(`O número ${a} é maior que o número ${b}?`);
+console.log(a > b); //aqui fala que o "a" é maior que o "b", mas o "a" é menor, entao o resultado é false
+
+//Aprovado ou reprovado?
+let mediaAluno = 7;
+if (mediaAluno >=7){ 
+  console.log("Aluno aprovado")
+} 
+else{console.log("Aluno reprovado")
+};
+
+//Verificação de idade
+let idade = parseInt(prompt("Digite sua idade:"));
+if (idade >= 18){
+  alert("Maior de idade");
+}
+else{alert("menor de idade")};
