@@ -130,3 +130,49 @@ let idadeAcesso = 22;
 let contaAtiva = true;
 let banido = true;
 console.log(idadeAcesso >= 18 && contaAtiva && !banido);
+
+//Desafios Combinados
+
+//Par e dentro do intervalo
+let numeroPar = 86;
+console.log(numeroPar % 2 === 0 && numeroPar >= 1 && numeroPar <= 100);
+
+//Classificação de nota
+let nota = 7;
+if (nota >=9){
+  console.log("exelente");
+}
+if (nota >=7 && nota <9){
+  console.log("Aprovado");
+}
+if (nota >=5 && nota <7){
+  console.log("Recuperação");
+}
+if (nota <5){
+  console.log("Reprovado");
+};
+
+//Calculadora de IMC
+let peso = 63;
+let altura = 1.62;
+let imc = peso / (altura ** 2);
+console.log(`O imc é: ${imc.toFixed(2)}`);
+if (imc < 18.5){
+  console.log("Abaixo do peso");
+}
+if (imc >= 18.5 && imc < 25){
+  console.log("Peso normal");
+}
+if (imc >= 25 && imc < 30){
+  console.log("Sobrepeso");
+}
+if (imc >= 30){
+  console.log("Obesidade");
+};
+
+//Jogo de adivinhar o número
+const numerofixo = 10;
+let numeroJogo = 25;
+console.log(`O numero do usuario é igual ao numero fixo?: ${numerofixo === numeroJogo}
+O numero é maior que o fixo?: ${numeroJogo > numerofixo}
+`);
