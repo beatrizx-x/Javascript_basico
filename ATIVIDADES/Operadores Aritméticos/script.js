@@ -101,3 +101,32 @@ console.log("O produto está na faixa de preço permitida!");
 }
 
 //Operadores Lógicos
+
+//E lógico 
+let numeroLogico = 10;
+let verificadorDePar = numeroLogico % 2;
+console.log(numeroLogico > 0 && verificadorDePar === 0);
+
+//Ou lógico
+let nomeUsuario = "admin";
+console.log(nomeUsuario === "admin" || nomeUsuario === "root");
+
+//NÃO lógico
+let logado = false;
+console.log(!logado);
+
+//Validação de formulário
+let idadeUsuario = 25;
+let email = "usuario@example.com";
+console.log(idadeUsuario >= 18 && email !== "");
+
+//Desconto especial
+let assinante = false;
+let totalCompra = 200;
+console.log(assinante === true || totalCompra >= 200);
+
+//Acesso restrito
+let idadeAcesso = 22;
+let contaAtiva = true;
+let banido = true;
+console.log(idadeAcesso >= 18 && contaAtiva && !banido);
