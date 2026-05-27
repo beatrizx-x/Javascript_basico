@@ -70,8 +70,34 @@ else{console.log("Aluno reprovado")
 };
 
 //Verificação de idade
-let idade = parseInt(prompt("Digite sua idade:"));
+let idade = 20;
 if (idade >= 18){
-  alert("Maior de idade");
+  console.log("Maior de idade");
 }
-else{alert("menor de idade")};
+else{
+  console.log("menor de idade");
+}
+
+//Comparação de strings
+let string = "amor";
+let string2 = "Amor";
+let string3 = "odio";
+console.log(`strings iguais ususando === é: ${string === string}`);
+console.log(`strings com iniciais maiuscula e minuscula usando === é: ${string === string2}`);
+console.log(`strings diferentes usando === é: ${string === string3}`);
+//
+console.log(`strings iguais ususando !== é: ${string !== string}`);
+console.log(`strings com iniciais maiuscula e minuscula usando !== é: ${string !== string2}`);
+console.log(`strings diferentes usando !== é: ${string !== string3}`);
+
+
+//Faixa de preço
+let preço = 40;
+if (preço >= 10 && preço <= 100){
+console.log("O produto está na faixa de preço permitida!");
+}
+  else {
+  console.log("Produto fora da faixa de preço.");
+}
+
+//Operadores Lógicos
