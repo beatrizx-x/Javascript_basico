@@ -179,3 +179,5 @@ alert(`Seu salario é ${salario}, o percentual aplicado é ${percentual}%, o val
 
 
 /*12. Folha de pagamento*/
+let valorHoraTrabalhada = Number(prompt("Valor da hora trabalhada:"))
+let horasTrabalhadaMes = Number(prompt("Quantidade de horas trabalhadas no mês:"))
