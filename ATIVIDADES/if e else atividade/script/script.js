@@ -28,7 +28,6 @@ if(sexo === sexoF){
     alert("invalido")
 }*/
 
-
 /* 4. Vogal ou consoante
 const vogalA = "a"
 const vogalE = "e"
@@ -161,7 +160,7 @@ switch (turno) {
     default: alert("inválido")
     }*/
 
-    /* 11. Reajuste salarial
+/* 11. Reajuste salarial
     let salario = Number(prompt("digite seu salario:"))
     let percentual;
     if (salario <= 280){
@@ -178,6 +177,150 @@ switch (turno) {
 alert(`Seu salario é ${salario}, o percentual aplicado é ${percentual}%, o valor do aumento será ${aumento}, e seu novo salario será ${novoSalario} `)*/
 
 
-/*12. Folha de pagamento*/
+/*12. Folha de pagamento
 let valorHoraTrabalhada = Number(prompt("Valor da hora trabalhada:"))
 let horasTrabalhadaMes = Number(prompt("Quantidade de horas trabalhadas no mês:"))
+let horaEValor = valorHoraTrabalhada * horasTrabalhadaMes
+let descontoIr;
+
+if(horaEValor > 2500){
+    descontoIr = 20/100
+}
+else if(horaEValor >= 1500){
+    descontoIr = 10/100
+}
+
+else if(horaEValor >= 900){
+  descontoIr = 5/100
+}
+else{
+   descontoIr = 0
+}
+
+const descontoINSS = 10/100
+const descontoSindicato = 3/100
+const descontoFGTS = 11/100
+const valorIr = horaEValor * descontoIr
+const valorINSS = horaEValor * descontoINSS
+const valorFGTS = horaEValor * descontoFGTS
+const valorSindicato = horaEValor * descontoSindicato
+let totalDescontosSemFGTS = valorINSS + valorIr
+let salarioLiquido =  horaEValor - totalDescontosSemFGTS 
+alert(`total de descontos: ${totalDescontosSemFGTS}, salario líquido: ${salarioLiquido}, salario bruto: ${horaEValor}`)*/
+
+
+/*13. Dia da semana
+let dias = Number(prompt("digite um numero de 1 a 7:"));
+switch (dias) {
+  case 1:
+    alert("Domingo");
+    break;
+  case 2:
+    alert("Segunda");
+    break;
+  case 3:
+    alert("terça");
+    break;
+  case 4:
+    alert("quarta");
+    break;
+  case 5:
+    alert("quinta");
+    break;
+  case 6:
+    alert("sexta");
+    break;
+  case 7:
+    alert("Sábado");
+    break;
+  default:
+    alert("invalido");
+}
+*/
+
+
+/*14. Conceito por média
+let n1 = Number(prompt("digite sua primeira nota:"))
+let n2 = Number(prompt("digite sua segunda nota:"))
+let media = (n1 + n2)/2
+if(media >= 9.0){
+    alert(`aprovado. suas notas são ${n1} e ${n2}, sua média é ${media}. Tirou A. `)
+}else if(media >= 7.5){
+    alert(`aprovado . suas notas são ${n1} e ${n2}, sua média é ${media}. Tirou B.`)
+}
+else if(media >= 6.0){
+    alert(`aprovado. suas notas são ${n1} e ${n2}, sua média é ${media}.Tirou C.`)
+}
+else if(media >= 4.0){
+    alert(`reprovado. suas notas são ${n1} e ${n2}, sua média é ${media}. Tirou D.`)
+}
+else{
+    alert(`reprovado. suas notas são ${n1} e ${n2}, sua média é ${media}. Tirou E.`)
+}*/
+
+/*15. Tipos de triângulo
+let trianguloLado1 = Number(prompt("digite um lado do triangulo"))
+let trianguloLado2 = Number(prompt("digite o outro lado do triangulo:"))
+let trianguloLado3 = Number(prompt("digite o proximo lado do triangulo:"))
+let triangulo;
+if(trianguloLado1 + trianguloLado2 > trianguloLado3 && trianguloLado2 + trianguloLado3 > trianguloLado1 && trianguloLado1 + trianguloLado3 > trianguloLado2){
+    triangulo = true
+}
+else{
+    triangulo = false
+}
+
+if(triangulo && trianguloLado1 === trianguloLado2 && trianguloLado2 === trianguloLado3){
+    alert(`triangulo Equilátero`)
+}
+else if( triangulo && trianguloLado1 !== trianguloLado2 && trianguloLado2 !== trianguloLado3 && trianguloLado1 !== trianguloLado3){
+    alert(`triangulo escaleno`)
+}
+else if((trianguloLado1 === trianguloLado2 && trianguloLado2 !== trianguloLado3) || (trianguloLado3 === trianguloLado2 && trianguloLado2 !== trianguloLado1)){
+    alert(`triangulo Isósceles`)
+}
+else{
+    alert("não é triangulo")
+}*/
+
+
+/*16. Equação do segundo grau
+let a = Number(prompt("Digite o valor de A:"));
+if (a === 0) {
+    alert("Como o A é igual a zero, isso não é uma equação de segundo grau.");
+} 
+else {
+    let b = Number(prompt("Digite o valor de B:"));
+    let c = Number(prompt("Digite o valor de C:"));
+    let delta = (b * b) - (4 * a * c);
+    if (delta < 0) {
+        alert(`O Delta deu ${delta} (negativo). A equação não possui raízes reais.`);
+    } 
+    else if (delta === 0) {
+        let raizUnica = -b / (2 * a);
+        alert(`O Delta é zero. A equação possui apenas uma raiz real: ${raizUnica}`);
+    } 
+    else {
+        let raiz1 = (-b + Math.sqrt(delta)) / (2 * a);
+        let raiz2 = (-b - Math.sqrt(delta)) / (2 * a);
+        
+        alert(`O Delta deu ${delta}. A equação possui duas raízes reais:
+        X'  = ${raiz1}
+        X'' = ${raiz2}`);
+    }
+}*/
+/*17. Ano bissexto
+let ano = Number(prompt("digite o ano:"))
+if((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)){
+    alert("Ano bissexto")
+}
+else{
+    alert("não é bissexto")
+}*/
+
+/*18. Par ou ímpar*/
+let numero = Number(prompt("digite um numero"))
+let verificador = numero % 2
+if(verificador === 0){
+    alert("par")
+}
