@@ -176,7 +176,6 @@ switch (turno) {
     let novoSalario = aumento + salario
 alert(`Seu salario é ${salario}, o percentual aplicado é ${percentual}%, o valor do aumento será ${aumento}, e seu novo salario será ${novoSalario} `)*/
 
-
 /*12. Folha de pagamento
 let valorHoraTrabalhada = Number(prompt("Valor da hora trabalhada:"))
 let horasTrabalhadaMes = Number(prompt("Quantidade de horas trabalhadas no mês:"))
@@ -208,7 +207,6 @@ let totalDescontosSemFGTS = valorINSS + valorIr
 let salarioLiquido =  horaEValor - totalDescontosSemFGTS 
 alert(`total de descontos: ${totalDescontosSemFGTS}, salario líquido: ${salarioLiquido}, salario bruto: ${horaEValor}`)*/
 
-
 /*13. Dia da semana
 let dias = Number(prompt("digite um numero de 1 a 7:"));
 switch (dias) {
@@ -237,7 +235,6 @@ switch (dias) {
     alert("invalido");
 }
 */
-
 
 /*14. Conceito por média
 let n1 = Number(prompt("digite sua primeira nota:"))
@@ -283,7 +280,6 @@ else{
     alert("não é triangulo")
 }*/
 
-
 /*16. Equação do segundo grau
 let a = Number(prompt("Digite o valor de A:"));
 if (a === 0) {
@@ -318,9 +314,158 @@ else{
     alert("não é bissexto")
 }*/
 
-/*18. Par ou ímpar*/
+/*18. Par ou ímpar
 let numero = Number(prompt("digite um numero"))
 let verificador = numero % 2
 if(verificador === 0){
     alert("par")
 }
+else{
+    alert("impar")
+}*/
+
+/*19. Características de um número
+let comando = prompt("deseja saber se o numero é par ou impar, ou, positivo ou negativo?")
+switch (comando){
+    case "par ou impar": 
+    let numeroParImpar = Number(prompt(" digite um numero:"))
+    let verificadorParImpar = numeroParImpar % 2
+    if(verificadorParImpar === 0){
+    alert("par")
+}
+else{
+    alert("impar")
+}
+break;
+case "positivo ou negativo": 
+let numeroPositivoNegativo = Number(prompt("digite um numero:"))
+if(numeroPositivoNegativo < 0)
+    alert("negativo")
+else if(numeroPositivoNegativo >0)
+    alert("positivo")
+else{
+    alert("neutro")
+}
+break;
+default: {
+    alert("invalido")
+}
+}*/
+
+/*20. Investigação criminal
+let sim = 0
+let telefonou = prompt("Telefonou para a vítima?")
+if(telefonou === "sim")
+{
+    sim++
+}
+let localCrime = prompt("Esteve no local do crime?")
+if(localCrime === "sim")
+{
+        sim++
+
+}
+let moraPerto = prompt("Mora perto da vítima?")
+if(moraPerto === "sim")
+{
+        sim++
+
+}
+let devia = prompt("Devia para a vítima?")
+if(devia === "sim")
+{
+       sim++
+
+}
+let trabalhoComAVitima = prompt("Já trabalhou com a vítima?")
+if(trabalhoComAVitima === "sim")
+{
+        sim++
+
+}
+if(sim === 5){
+    alert("assassino")
+}
+else if(sim === 4){
+    alert("cúmplice")
+}
+else if(sim === 3)
+{
+    alert("cúmplice")
+}
+else if(sim === 2){
+    alert("suspeito")
+}
+else{
+    alert("inocente")
+}
+*/
+
+/*21. Maior e menor entre dois números
+let n1 = Number(prompt("digite um numero:"))
+let n2 = Number(prompt("digite um numero:"))
+if(n1 > n2){
+    alert(`${n1} é maior, e o ${n2} é menor`)
+}
+else if(n2 > n1){
+    alert(`${n2} é maior, ${n1} é menor`)
+}
+else{
+    alert("são iguais")
+}*/
+/*22. Maior e menor entre três inteiros
+let numero1 = Number(prompt("digite o primeiro numero:"))
+let numero2 = Number(prompt("digite o segundo numero:"))
+let numero3 = Number(prompt("digite o terceiro numero:"))
+let maior = Math.max(numero1, numero2, numero3);
+let menor = Math.min(numero1, numero2, numero3);
+alert(`numero maior é ${maior}, e o numero menor é ${menor}`)
+//Math.max olha para todos os números que esta entre os parênteses e devolve apenas o maior deles.
+//Math.min olha para todos e te devolve o menor.*/
+
+/*23. Par ou ímpar em C*/
+//não entendi
+
+
+/*24. Circunferência
+let raio = Number(prompt("Digite o raio da circunferência:"));
+let diametro = 2 * raio;
+let comprimento = 2 * Math.PI * raio;
+let area = Math.PI * (raio * raio);
+alert(`Resultados:\nDiâmetro: ${diametro}\nComprimento: ${comprimento}\nÁrea: ${area}`);*/
+
+
+/*25. Doação de sangue
+let idade = Number(prompt("digite sua idade:"));
+if (idade < 18 || idade > 67) {
+    alert("não pode doar sangue");
+} else {
+    alert("pode doar sangue");
+}*/
+
+
+/*26. Validação de data
+let dia = Number(prompt("digite o dia em numeros:"))
+let mes = Number(prompt("digite o mes em numero:"))
+let ano = Number(prompt("digite o ano:"))
+if(dia > 31 || dia < 1){
+    alert("invalido, no mes so possui ate 31 dias")
+}
+else if(mes > 12 || mes < 1 ){
+    alert("invalido, no ano so possui ate 12 meses")
+}
+else if(ano > 2013){
+    alert("invalido, ainda não viajamos pro futuro")
+}
+else if(ano < 1800){
+    alert("invalido!!")
+}
+else{
+    alert(`data valida!! ${dia}/${mes}/${ano}`)
+}*/
+
+/*27. Troca de valores
+let x = Number(prompt("digite o valor de x:"))
+let y = Number(prompt("digite o valor de y:"))
+alert(`x = ${x} e y = ${y}`)
+alert(`x = ${y} e y = ${x}`)*/
