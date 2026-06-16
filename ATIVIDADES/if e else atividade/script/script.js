@@ -45,7 +45,7 @@ if(vogalConsoante === vogalA || vogalConsoante === vogalE || vogalConsoante === 
 /*## 5. Média de notas
 let nota1 = Number(prompt("digite sua primeira nota"))
 let nota2 = Number(prompt("digite sua segunda nota"))
-let soma = (nota1 + nota2) / 2 
+let soma = (nota1 + nota2) / 2
 if(soma === 10){
     alert("Aprovado com Distinção")
 } else if(soma >=7 && soma <= 9.99){
@@ -153,7 +153,7 @@ switch (turno) {
 
     case "V": alert("Boa tarde!")
         break;
-       
+
     case "N": alert("Boa noite!")
         break;
 
@@ -171,10 +171,11 @@ switch (turno) {
         percentual = 10;
     }else{
         percentual = 5;
-    } 
+    }
     let aumento = (salario * percentual)/ 100
     let novoSalario = aumento + salario
-alert(`Seu salario é ${salario}, o percentual aplicado é ${percentual}%, o valor do aumento será ${aumento}, e seu novo salario será ${novoSalario} `)*/
+    alert(`Seu salario é ${salario}, o percentual aplicado é ${percentual}%, o valor do aumento será ${aumento}, e seu novo salario será ${novoSalario} `)*/
+
 
 /*12. Folha de pagamento
 let valorHoraTrabalhada = Number(prompt("Valor da hora trabalhada:"))
@@ -204,7 +205,7 @@ const valorINSS = horaEValor * descontoINSS
 const valorFGTS = horaEValor * descontoFGTS
 const valorSindicato = horaEValor * descontoSindicato
 let totalDescontosSemFGTS = valorINSS + valorIr
-let salarioLiquido =  horaEValor - totalDescontosSemFGTS 
+let salarioLiquido =  horaEValor - totalDescontosSemFGTS
 alert(`total de descontos: ${totalDescontosSemFGTS}, salario líquido: ${salarioLiquido}, salario bruto: ${horaEValor}`)*/
 
 /*13. Dia da semana
@@ -284,22 +285,22 @@ else{
 let a = Number(prompt("Digite o valor de A:"));
 if (a === 0) {
     alert("Como o A é igual a zero, isso não é uma equação de segundo grau.");
-} 
+}
 else {
     let b = Number(prompt("Digite o valor de B:"));
     let c = Number(prompt("Digite o valor de C:"));
     let delta = (b * b) - (4 * a * c);
     if (delta < 0) {
         alert(`O Delta deu ${delta} (negativo). A equação não possui raízes reais.`);
-    } 
+    }
     else if (delta === 0) {
         let raizUnica = -b / (2 * a);
         alert(`O Delta é zero. A equação possui apenas uma raiz real: ${raizUnica}`);
-    } 
+    }
     else {
         let raiz1 = (-b + Math.sqrt(delta)) / (2 * a);
         let raiz2 = (-b - Math.sqrt(delta)) / (2 * a);
-        
+
         alert(`O Delta deu ${delta}. A equação possui duas raízes reais:
         X'  = ${raiz1}
         X'' = ${raiz2}`);
@@ -327,7 +328,7 @@ else{
 /*19. Características de um número
 let comando = prompt("deseja saber se o numero é par ou impar, ou, positivo ou negativo?")
 switch (comando){
-    case "par ou impar": 
+    case "par ou impar":
     let numeroParImpar = Number(prompt(" digite um numero:"))
     let verificadorParImpar = numeroParImpar % 2
     if(verificadorParImpar === 0){
@@ -337,7 +338,7 @@ else{
     alert("impar")
 }
 break;
-case "positivo ou negativo": 
+case "positivo ou negativo":
 let numeroPositivoNegativo = Number(prompt("digite um numero:"))
 if(numeroPositivoNegativo < 0)
     alert("negativo")
@@ -398,8 +399,8 @@ else if(sim === 2){
 }
 else{
     alert("inocente")
-}
-*/
+}*/
+
 
 /*21. Maior e menor entre dois números
 let n1 = Number(prompt("digite um numero:"))
