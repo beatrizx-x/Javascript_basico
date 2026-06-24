@@ -467,10 +467,10 @@ Podemos usar `style.display`.
 HTML:
 
 ```html
-<p id="texto">Mensagem secreta</p>
+<p id="texto">oieeeee</p>
 <button onclick="esconderTexto()">Esconder</button>
 <button onclick="mostrarTexto()">Mostrar</button>
-```
+``` 
 
 JavaScript:
 

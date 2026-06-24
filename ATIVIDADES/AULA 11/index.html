@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de DOM</title>
+</head>
+
+<body>
+    <h1 id="titulo"> minha primeira página com DOM </h1>
+
+    <button onclick="alterarTitulo()">clique aqui</button>
+
+    <button onclick="mostrarMensagem()">clique aqui</button>
+
+    <input type="text" id="nome" placeholder="digite seu nome">
+    <button onclick="mostrarNome()">mostrar nome</button>
+    <p id="resultado"></p>
+
+    <h1>Verificador de idade</h1>
+
+    <input type="number" id="idade" placeholder="Digite sua idade">
+    <button onclick="verificarIdade()">Verificar</button>
+
+    <p id="resultado1"></p>
+    <img id="imagem" src="img/image.png" width="250">
+    <button onclick="trocarImagem()">Trocar imagem</button>
+
+    <div id="area"></div>
+    <button onclick="criarParagrafo()">Criar parágrafo</button>
+
+    <p id="texto">Mensagem secreta</p>
+    <button onclick="esconderTexto()">Esconder</button>
+    <button onclick="mostrarTexto()">Mostrar</button>
+
+    <p id="aviso">Este texto será removido.</p>
+<button onclick="removerAviso()">Remover</button>
+
+
+  <h1>Calculadora de IMC</h1>
+
+    <label>Peso:</label>
+    <input type="number" id="peso" placeholder="Ex: 70">
+
+    <br><br>
+
+    <label>Altura:</label>
+    <input type="number" id="altura" placeholder="Ex: 1.75" step="0.01">
+
+    <br><br>
+
+    <button onclick="calcularIMC()">Calcular</button>
+
+    <p id="resultado"></p>
+
+     <h1>Minha lista de tarefas</h1>
+
+    <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+    <button onclick="adicionarTarefa()">Adicionar</button>
+
+    <ul id="lista"></ul>
+    <script src="js/script.js"></script> 
+
+</body>
+
+</html>
